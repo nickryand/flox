@@ -33,11 +33,11 @@
   inputs.crane.url = "github:ipetkov/crane";
   inputs.crane.inputs.nixpkgs.follows = "nixpkgs";
 
-  # This is needed to be able to calculate `git describe` format version of flox
-  # without running `git describe`
-  inputs.flox-latest.url = "git+https://github.com/flox/flox?ref=latest";
+  # # This is needed to be able to calculate `git describe` format version of flox
+  # # without running `git describe`
+  inputs.flox-latest.url = "git+https://github.com/nickryand/flox?ref=custom";
   inputs.flox-latest.flake = false;
-
+  #
   # -------------------------------------------------------------------------- #
 
   outputs =
